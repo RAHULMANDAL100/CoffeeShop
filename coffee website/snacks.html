@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Snacks Page</title>
+</head>
+<style>
+    html {
+        background-color: #111;
+        color: azure;
+        scroll-behavior: smooth;
+    }
+
+    .heap {
+        font-size: 45px;
+        color: azure;
+        margin-left: 650px;
+
+    }
+
+    .ser,
+    .bur,
+    .pas,
+    .past,
+    .dosa,
+    .idli,
+    .para,
+    .bhat,
+    .momo,
+    .chili,
+    .frmomo,
+    .chow,
+    .nood,
+    .cabb,
+    .corn,
+    .mush,
+    .roll,
+    .biri {
+        height: 30px;
+        width: 120px;
+        border: 2px solid;
+        background-color: black;
+        color: white;
+        margin: 17px;
+        font-size: 20px;
+        border: 1px white solid;
+        border-radius: 5%;
+        font-weight: 500;
+        margin-top: -13px;
+        cursor: pointer;
+        box-shadow: 3px 3px 7px -5px #111;
+    }
+
+    .ser:hover,
+    .bur:hover,
+    .pas:hover,
+    .past:hover,
+    .dosa:hover,
+    .idli:hover,
+    .para:hover,
+    .bhat:hover,
+    .momo:hover,
+    .chili:hover,
+    .frmomo:hover,
+    .chow:hover,
+    .nood:hover,
+    .cabb:hover,
+    .corn:hover,
+    .mush:hover,
+    .roll:hover,
+    .biri:hover {
+        background-color: white;
+        color: black;
+        font-weight: 600;
+    }
+
+    .item img {
+        width: 300px;
+        height: 200px;
+        transition: transform .2s;
+    }
+
+    .item img:hover {
+        transform: scale(1.5);
+    }
+
+    .container {
+        display: block;
+        margin-left: 160px;
+    }
+
+    .item {
+        width: 300px;
+        margin-left: 100px;
+        margin-bottom: 80px;
+        height: 350px;
+        float: left;
+        border: 1px black solid;
+        background-color: rgb(33, 33, 33);
+    }
+
+    h3 {
+        font-size: 28px;
+        margin-left: 30px;
+        margin-top: 5px;
+    }
+
+    h3:hover {
+        color: violet;
+    }
+
+    h4 {
+        margin-left: 30px;
+        margin-top: -5px;
+        font-size: 22px;
+        color: khaki;
+    }
+
+    h4:hover {
+        color: yellow;
+    }
+
+    .popup1 {
+        background-color: azure;
+        color: #111;
+        width: 700px;
+        height: 700px;
+        position: absolute;
+        margin-left: 600px;
+        display: none;
+        margin-top: 350px;
+        z-index: 2;
+        transform: translate(-50%, -50%);
+        transition: transform 0.4s, top 0.2s;
+    }
+
+    .popup2 {
+        background-color: azure;
+        color: #111;
+        width: 700px;
+        height: 700px;
+        position: absolute;
+        margin-left: 600px;
+        display: none;
+        margin-top: 775px;
+        z-index: 2;
+        transform: translate(-50%, -50%);
+        transition: transform 0.4s, top 0.2s;
+    }
+
+    .popup3 {
+        background-color: azure;
+        color: #111;
+        width: 700px;
+        height: 700px;
+        position: absolute;
+        margin-left: 600px;
+        display: none;
+        margin-top: 1220px;
+        z-index: 2;
+        transform: translate(-50%, -50%);
+        transition: transform 0.4s, top 0.2s;
+    }
+
+    .popup4 {
+        background-color: azure;
+        color: #111;
+        width: 700px;
+        height: 700px;
+        position: absolute;
+        margin-left: 600px;
+        display: none;
+        margin-top: 1650px;
+        z-index: 2;
+        transform: translate(-50%, -50%);
+        transition: transform 0.4s, top 0.2s;
+    }
+
+    .popup5 {
+        background-color: azure;
+        color: #111;
+        width: 700px;
+        height: 700px;
+        position: absolute;
+        margin-left: 600px;
+        display: none;
+        margin-top: 2080px;
+        z-index: 2;
+        transform: translate(-50%, -50%);
+        transition: transform 0.4s, top 0.2s;
+    }
+
+    .popup6 {
+        background-color: azure;
+        color: #111;
+        width: 700px;
+        height: 700px;
+        position: absolute;
+        margin-left: 600px;
+        display: none;
+        margin-top: 2225px;
+        z-index: 2;
+        transform: translate(-50%, -50%);
+        transition: transform 0.4s, top 0.2s;
+    }
+
+    .close1,
+    .close2,
+    .close3,
+    .close4,
+    .close5,
+    .close6,
+    .close7,
+    .close8,
+    .close9,
+    .close10,
+    .close11,
+    .close12,
+    .close13,
+    .close14,
+    .close15,
+    .close16,
+    .close17,
+    .close18 {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+
+    .pay1,
+    .pay2,
+    .pay3,
+    .pay4,
+    .pay5,
+    .pay6 {
+        margin-left: 50px;
+        margin-top: 5px;
+        width: 130px;
+        background-color: rgb(51, 51, 230);
+        color: white;
+        height: 40px;
+        font-size: 28px;
+    }
+
+    .continue1,
+    .continue2,
+    .continue3,
+    .continue4,
+    .continue5,
+    .continue6 {
+        margin-left: 50px;
+        margin-top: 5px;
+        width: 140px;
+        background-color: rgb(51, 51, 230);
+        color: white;
+        height: 40px;
+        font-size: 28px;
+    }
+
+    .continue1:hover,
+    .continue2:hover,
+    .continue3:hover,
+    .continue4:hover,
+    .continue5:hover,
+    .continue6:hover {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        opacity: 0.8;
+        font-weight: 600;
+    }
+
+    .pay1:hover,
+    .pay2:hover,
+    .pay3:hover,
+    .pay4:hover,
+    .pay5:hover,
+    .pay6:hover {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        opacity: 0.8;
+        font-weight: 600;
+    }
+
+    .person {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-left: 15px;
+        position: absolute;
+        margin-top: 10px;
+    }
+
+    .greet {
+        font-size: 32px;
+        margin-left: 70px;
+    }
+
+    input[type=number] {
+        font-size: 20px;
+        width: 150px;
+        height: 30px;
+    }
+
+    .paymentpage1 {
+        width: 700px;
+        height: 700px;
+        position: absolute;
+        margin-left: 600px;
+        display: none;
+        margin-top: 350px;
+        z-index: 2;
+        background-color: azure;
+        color: #111;
+        font-size: 35px;
+        transform: translate(-50%, -50%);
+        transition: transform 0.4s, top 0.2s;
+    }
+
+    .paymentpage2 {
+        width: 700px;
+        height: 700px;
+        position: absolute;
+        margin-left: 600px;
+        display: none;
+        margin-top: 350px;
+        z-index: 2;
+        background-color: azure;
+        color: #111;
+        font-size: 35px;
+        transform: translate(-50%, -50%);
+        transition: transform 0.4s, top 0.2s;
+    }
+
+    .paymentpage3 {
+        width: 700px;
+        height: 700px;
+        position: absolute;
+        margin-left: 600px;
+        display: none;
+        margin-top: 350px;
+        z-index: 2;
+        background-color: azure;
+        color: #111;
+        font-size: 35px;
+        transform: translate(-50%, -50%);
+        transition: transform 0.4s, top 0.2s;
+    }
+
+    .paymentpage4 {
+        width: 700px;
+        height: 700px;
+        position: absolute;
+        margin-left: 600px;
+        display: none;
+        margin-top: 350px;
+        z-index: 2;
+        background-color: azure;
+        color: #111;
+        font-size: 35px;
+        transform: translate(-50%, -50%);
+        transition: transform 0.4s, top 0.2s;
+    }
+
+    .paymentpage5 {
+        width: 700px;
+        height: 700px;
+        position: absolute;
+        margin-left: 600px;
+        display: none;
+        margin-top: 350px;
+        z-index: 2;
+        background-color: azure;
+        color: #111;
+        font-size: 35px;
+        transform: translate(-50%, -50%);
+        transition: transform 0.4s, top 0.2s;
+    }
+
+    .paymentpage6 {
+        width: 700px;
+        height: 700px;
+        position: absolute;
+        margin-left: 600px;
+        display: none;
+        margin-top: 350px;
+        z-index: 2;
+        background-color: azure;
+        color: #111;
+        font-size: 35px;
+        transform: translate(-50%, -50%);
+        transition: transform 0.4s, top 0.2s;
+    }
+
+    .hello,
+    .Parag,
+    .namer1,
+    .namer2,
+    .namer3,
+    .namer4,
+    .namer5,
+    .namer6,
+    .total1,
+    .total2,
+    .total3,
+    .total4,
+    .total5,
+    .total6 .discount1,
+    .amount1,
+    .discount2,
+    .amount2,
+    .discount3,
+    .amount3,
+    .discount4,
+    .amount4,
+    .discount5,
+    .amount5,
+    .discount6,
+    .amount6 {
+        margin-left: 5px;
+    }
+
+    .name1,
+    .name2,
+    .name3,
+    .name4,
+    .name5,
+    .name6 {
+        font-size: 35px;
+        color: #111;
+    }
+
+    .namer1,
+    .namer2,
+    .namer3,
+    .namer4,
+    .namer5,
+    .namer6 {
+        z-index: 3;
+        margin-left: 30px;
+        margin-top: 175px;
+        margin-left: 15px;
+        color: black;
+    }
+
+    .thanks1,
+    .thanks2,
+    .thanks3,
+    .thanks4,
+    .thanks5,
+    .thanks6 {
+        width: 600px;
+        height: 300px;
+        position: absolute;
+        font-size: 32px;
+        color: #111;
+        margin-left: 300px;
+        display: none;
+        z-index: 4;
+        background-color: antiquewhite;
+    }
+
+    .thanks1 h2,
+    .thanks2 h2,
+    .thanks3 h2,
+    .thanks4 h2,
+    .thanks5 h2,
+    .thanks6 h2 {
+        margin-left: 50px;
+    }
+
+    .tick1,
+    .tick2,
+    .tick3,
+    .tick4,
+    .tick5,
+    .tick6 {
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+    }
+
+    .Parag,
+    .hello {
+        margin-left: 30px;
+    }
+
+    .navbar {
+        position: fixed;
+        width: 100%;
+        height: 120px;
+        margin-top: -17px;
+        background-color: rgb(37, 36, 36);
+        z-index: 2;
+    }
+
+    .navbar a {
+        color: azure;
+        margin-left: 150px;
+        font-size: 30px;
+        text-decoration: none;
+    }
+
+    .navbar a:hover {
+        color: burlywood;
+        text-decoration: underline;
+    }
+
+    .navbar p {
+        margin-left: 200px;
+        margin-top: 35px;
+    }
+
+    .navbar img {
+        width: 87px;
+        height: 80px;
+        margin-left: 80px;
+        margin-top: 30px;
+        border-radius: 50%;
+        position: absolute;
+    }
+
+    .footer {
+        margin-top: 2600px;
+        width: 100%;
+        height: 300px;
+        background-color: rgb(33, 33, 33);
+    }
+
+    .footer .links a {
+        color: azure;
+        font-size: 25px;
+        text-decoration: none;
+        margin-bottom: 10px;
+    }
+
+    .footer .links {
+        margin-left: 500px;
+        margin-top: 30px;
+    }
+
+    .footer .links a {
+        margin-left: 50px;
+    }
+
+    .footer .links a:hover {
+        color: burlywood;
+    }
+
+    .footer .share a {
+        margin-left: 20px;
+    }
+
+    .footer .share {
+        margin-left: 600px;
+        font-size: 28px;
+        margin-top: 40px;
+    }
+
+    .footer .share a:hover {
+        color: burlywood;
+    }
+
+    .footer .share a {
+        color: azure;
+        text-decoration: none;
+        margin-bottom: 10px;
+    }
+
+    .footer .credit {
+        color: azure;
+        font-size: 30px;
+        margin-top: 30px;
+        margin-left: 270px;
+    }
+
+    .footer .content {
+        margin-top: 20px;
+    }
+    .footer .credit a{
+        color: azure;
+        text-decoration: none;
+    }
+    .footer .credit a:hover{
+        color: burlywood;
+    }
+</style>
+
+<body>
+    <nav class="navbar">
+        <img src="images/logo.png" alt="">
+        <p>
+            <a href="snacks.html">Home</a>
+            <a href="about us.html">About us</a>
+            <a href="index.html">Coffee</a></li>
+            <a href="contact.html">Contact</a>
+        </p>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 class="heap">Snacks in Plate 🍕</h1>
+    <br>
+    <br>
+    <div class="container">
+        <div class="item">
+            <img src="images/Pizza.webp" alt="">
+            <h3>Cheese Pizza</h3>
+            <h4>₹299/-</h4>
+            <button class="ser"> Order now</button>
+        </div>
+        <div class="item">
+            <img src="images/Burger.jpg" alt="">
+            <h3>Chicken Burger</h3>
+            <h4>₹299/-</h4>
+            <button class="bur"> Order now</button>
+        </div>
+        <div class="item">
+            <img src="images/Pasta.jpeg" alt="">
+            <h3>Veg Pasta</h3>
+            <h4>₹99/-</h4>
+            <button class="pas"> Order now</button>
+        </div>
+        <div class="item">
+            <img src="images/Pastry.jpg" alt="">
+            <h3>Chocolate Pastry</h3>
+            <h4>₹99/-</h4>
+            <button class="past"> Order now</button>
+        </div>
+        <div class="item">
+            <img src="images/Chow.jpg" alt="">
+            <h3>Chicken Chowmein</h3>
+            <h4>₹99/-</h4>
+            <button class="chow"> Order now</button>
+        </div>
+        <div class="item">
+            <img src="images/Chicken-Roll.jpg" alt="">
+            <h3>Chicken Roll</h3>
+            <h4>₹99/-</h4>
+            <button class="roll"> Order now</button>
+        </div>
+        <div class="item">
+            <img src="images/Paratha.jpg" alt="">
+            <h3>Aaloo Parathe</h3>
+            <h4>₹69/-</h4>
+            <button class="para"> Order now</button>
+        </div>
+        <div class="item">
+            <img src="images/Dosa.jpg" alt="">
+            <h3>Masala Dosa</h3>
+            <h4>₹149/-</h4>
+            <button class="dosa"> Order now</button>
+        </div>
+        <div class="item">
+            <img src="images/Idli.jpg" alt="">
+            <h3>Idli</h3>
+            <h4>₹99/-</h4>
+            <button class="idli"> Order now</button>
+        </div>
+        <div class="item">
+            <img src="images/Chole.jpeg" alt="">
+            <h3>Chole Bhature</h3>
+            <h4>₹69/-</h4>
+            <button class="bhat"> Order now</button>
+        </div>
+        <div class="item">
+            <img src="images/Momo.jpg" alt="">
+            <h3>Chicken Momo</h3>
+            <h4>₹99/-</h4>
+            <button class="momo"> Order now</button>
+        </div>
+        <div class="item">
+            <img src="images/Fried.jpg" alt="">
+            <h3>Fried Momos</h3>
+            <h4>₹149/-</h4>
+            <button class="frmomo"> Order now</button>
+        </div>
+        <div class="item">
+            <img src="images/Biri.jpg" alt="">
+            <h3>Chicken Biriyani</h3>
+            <h4>₹199/-</h4>
+            <button class="biri"> Order now</button>
+        </div>
+        <div class="item">
+            <img src="images/Hakka.jpg" alt="">
+            <h3>Hakka Noodles</h3>
+            <h4>₹149/-</h4>
+            <button class="nood"> Order now</button>
+        </div>
+        <div class="item">
+            <img src="images/Chilli.jpg" alt="">
+            <h3>Chilli Chicken</h3>
+            <h4>₹199/-</h4>
+            <button class="chili"> Order now</button>
+        </div>
+        <div class="item">
+            <img src="images/Mushroom.jpg" alt="">
+            <h3>Mushroom Chilli</h3>
+            <h4>₹199/-</h4>
+            <button class="mush"> Order now</button>
+        </div>
+        <div class="item">
+            <img src="images/Baby.jpg" alt="">
+            <h3>Baby Corn Chilli</h3>
+            <h4>₹199/-</h4>
+            <button class="corn"> Order now</button>
+        </div>
+        <div class="item">
+            <img src="images/Manchurian.jpg" alt="">
+            <h3>Cabbage Manchurian</h3>
+            <h4>₹199/-</h4>
+            <button class="cabb"> Order now</button>
+        </div>
+        <div class="popup1">
+            <div class="popup-content">
+                <img src="images/Person.png" class="person" alt="">
+                <p class="greet">Hello Sir/Madam
+                    <br>
+                    What would you like to order now ?
+                </p>
+                <img src="images/Close.png" alt="close" class="close1">
+                <input type="text" placeholder="Enter your name..." class="name1"
+                    style="width: 600px; height:40px; margin-top:30px; margin-left: 50px; border: #111 1px solid;font-size: 26px; font-family: 'Times New Roman', Times, serif;">
+                <br>
+                <input type="number" maxlength="10" minlength="10" placeholder="Enter your phone no..."
+                    style="width: 300px; height:40px; margin-top:30px; margin-left: 50px; border: #111 1px solid;font-size: 26px; font-family: 'Times New Roman', Times, serif;">
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <label for="pizza" style="margin-left: 50px;  font-size: 25px;">Cheese Pizza</label>
+                <input type="checkbox" style="width: 18px; height: 18px;">
+                <label for="quanpizza" style=" font-size: 25px; margin-left: 100px;">Quantity</label>
+                <input type="number" class="quanpizza" value="0">
+                <br>
+                <br>
+                <label for="burger" style="margin-left: 50px; font-size: 25px;">Chicken Burger</label>
+                <input type="checkbox" style="width: 18px; height: 18px;">
+                <label for="quanbur" style=" font-size: 25px; margin-left: 75px;">Quantity</label>
+                <input type="number" class="quanburg" value="0">
+                <br>
+                <br>
+                <label for="pasta" style="margin-left: 50px;  font-size: 25px;">Veg Pasta</label>
+                <input type="checkbox" style="width: 18px; height: 18px;">
+                <label for="quanpasta" style=" font-size: 25px; margin-left: 136px;">Quantity</label>
+                <input type="number" class="quanpasta" value="0">
+                <br>
+                <br>
+
+                <a href="#"><button class="pay1" onclick="myFunction1()">Pay</button></a>
+            </div>
+        </div>
+        <div class="popup2">
+            <div class="popup-content">
+                <img src="images/Person.png" class="person" alt="">
+                <p class="greet">Hello Sir/Madam.
+                    <br>
+                    What would you like to order now ?
+                </p>
+                <img src="images/Close.png" alt="close" class="close2">
+                <input type="text" placeholder="Enter your name..." class="name2"
+                    style="width: 600px; height:40px; margin-top:30px; margin-left: 50px; border: #111 1px solid;font-size: 26px; font-family: 'Times New Roman', Times, serif;">
+                <br>
+                <input type="number" maxlength="10" minlength="10" placeholder="Enter your phone no..."
+                    style="width: 300px; height:40px; margin-top:30px; margin-left: 50px; border: #111 1px solid;font-size: 26px;font-family: 'Times New Roman', Times, serif;">
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <label for="pastry" style="margin-left: 50px;  font-size: 25px;">Chocolate Pastry</label>
+                <input type="checkbox" style="width: 18px; height: 18px;">
+                <label for="quanpastry" style=" font-size: 25px; margin-left: 100px;">Quantity</label>
+                <input type="number" class="quanpastry" value="0">
+                <br>
+                <br>
+                <label for="chow" style="margin-left: 50px; font-size: 25px;">Chicken Chowmein</label>
+                <input type="checkbox" style="width: 18px; height: 18px;">
+                <label for="quanchow" style=" font-size: 25px; margin-left: 72px;">Quantity</label>
+                <input type="number" class="quanchow" value="0">
+                <br>
+                <br>
+                <label for="roll" style="margin-left: 50px;  font-size: 25px;">Chicken Roll</label>
+                <input type="checkbox" style="width: 18px; height: 18px;">
+                <label for="quanpasta" style=" font-size: 25px; margin-left: 140px;">Quantity</label>
+                <input type="number" class="quanroll" value="0">
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href="#"><button class="pay2" onclick="myFunction2()">Pay</button></a>
+            </div>
+        </div>
+        <div class="popup3">
+            <div class="popup-content">
+                <img src="images/Person.png" class="person" alt="">
+                <p class="greet">Hello Sir/Madam
+                    <br>
+                    What would you like to order now ?
+                </p>
+                <img src="images/Close.png" alt="close" class="close3">
+                <input type="text" placeholder="Enter your name..." class="name3"
+                    style="width: 600px; height:40px; margin-top:30px; margin-left: 50px; border: #111 1px solid;font-size: 26px; font-family: 'Times New Roman', Times, serif;">
+                <br>
+                <input type="number" maxlength="10" minlength="10" placeholder="Enter your phone no..."
+                    style="width: 300px; height:40px; margin-top:30px; margin-left: 50px; border: #111 1px solid;font-size: 26px;font-family: 'Times New Roman', Times, serif;">
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <label for="paratha" style="margin-left: 50px;  font-size: 25px;">Aaloo Parathe</label>
+                <input type="checkbox" style="width: 18px; height: 18px;">
+                <label for="quanparatha" style=" font-size: 25px; margin-left: 100px;">Quantity</label>
+                <input type="number" class="quanparatha" value="0">
+                <br>
+                <br>
+                <label for="dosa" style="margin-left: 50px; font-size: 25px;">Masala Dosa</label>
+                <input type="checkbox" style="width: 18px; height: 18px;">
+                <label for="quandosa" style=" font-size: 25px; margin-left: 115px;">Quantity</label>
+                <input type="number" class="quandosa" value="0">
+                <br>
+                <br>
+                <label for="idli" style="margin-left: 50px;  font-size: 25px;">Idli</label>
+                <input type="checkbox" style="width: 18px; height: 18px;">
+                <label for="quanidli" style=" font-size: 25px; margin-left: 210px;">Quantity</label>
+                <input type="number" class="quanidli" value="0">
+                <br>
+                <br>
+                <br>
+                <a href="#"><button class="pay3" onclick="myFunction3()">Pay</button></a>
+            </div>
+        </div>
+        <div class="popup4">
+            <div class="popup-content">
+                <img src="images/Person.png" class="person" alt="">
+                <p class="greet">Hello Sir/Madam
+                    <br>
+                    What would you like to order now ?
+                </p>
+                <img src="images/Close.png" alt="close" class="close4">
+                <input type="text" placeholder="Enter your name..." class="name4"
+                    style="width: 600px; height:40px; margin-top:30px; margin-left: 50px; border: #111 1px solid;font-size: 26px;font-family: 'Times New Roman', Times, serif;">
+                <br>
+                <input type="number" maxlength="10" minlength="10" placeholder="Enter your phone no..."
+                    style="width: 300px; height:40px; margin-top:30px; margin-left: 50px; border: #111 1px solid;font-size: 26px;font-family: 'Times New Roman', Times, serif;">
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <label for="chole" style="margin-left: 50px;  font-size: 25px;">Chole Bhature</label>
+                <input type="checkbox" style="width: 18px; height: 18px;">
+                <label for="quanchole" style=" font-size: 25px; margin-left: 125px;">Quantity</label>
+                <input type="number" class="quanchole" value="0">
+                <br>
+                <br>
+                <label for="momo" style="margin-left: 50px; font-size: 25px;">Chicken Momo</label>
+                <input type="checkbox" style="width: 18px; height: 18px;">
+                <label for="quanmomo" style=" font-size: 25px; margin-left: 115px;">Quantity</label>
+                <input type="number" class="quanmomo" value="0">
+                <br>
+                <br>
+                <label for="friedmomo" style="margin-left: 50px;  font-size: 25px;">Fried Momos</label>
+                <input type="checkbox" style="width: 18px; height: 18px;">
+                <label for="quanfried" style=" font-size: 25px; margin-left: 136px;">Quantity</label>
+                <input type="number" class="quanfried" value="0">
+                <br>
+                <br>
+                <br>
+                <a href="#"><button class="pay4" onclick="myFunction4()">Pay</button></a>
+            </div>
+        </div>
+        <div class="popup5">
+            <div class="popup-content">
+                <img src="images/Person.png" class="person" alt="">
+                <p class="greet">Hello Sir/Madam
+                    <br>
+                    What would you like to order now ?
+                </p>
+                <img src="images/Close.png" alt="close" class="close5">
+                <input type="text" placeholder="Enter your name..." class="name5"
+                    style="width: 600px; height:40px; margin-top:30px; margin-left: 50px; border: #111 1px solid;font-size: 26px;font-family: 'Times New Roman', Times, serif;">
+                <br>
+                <input type="number" maxlength="10" minlength="10" placeholder="Enter your phone no..."
+                    style="width: 300px; height:40px; margin-top:30px; margin-left: 50px; border: #111 1px solid;font-size: 26px;font-family: 'Times New Roman', Times, serif;">
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <label for="biriyani" style="margin-left: 50px;  font-size: 25px;">Chicken Biriyani</label>
+                <input type="checkbox" style="width: 18px; height: 18px;">
+                <label for="quanbiri" style=" font-size: 25px; margin-left: 110px;">Quantity</label>
+                <input type="number" class="quanbiri" value="0">
+                <br>
+                <br>
+                <label for="hakka" style="margin-left: 50px; font-size: 25px;">Hakka Noodles</label>
+                <input type="checkbox" style="width: 18px; height: 18px;">
+                <label for="quanhakka" style=" font-size: 25px; margin-left: 127px;">Quantity</label>
+                <input type="number" class="quanhakka" value="0">
+                <br>
+                <br>
+                <label for="chillichicken" style="margin-left: 50px;  font-size: 25px;">Chilli Chicken</label>
+                <input type="checkbox" style="width: 18px; height: 18px;">
+                <label for="quanchilichicken" style=" font-size: 25px; margin-left: 136px;">Quantity</label>
+                <input type="number" class="quanchilichicken" value="0">
+                <br>
+                <br>
+                <br>
+                <a href="#"><button class="pay5" onclick="myFunction5()">Pay</button></a>
+            </div>
+        </div>
+        <div class="popup6">
+            <div class="popup-content">
+                <img src="images/Person.png" class="person" alt="">
+                <p class="greet">Hello Sir/Madam
+                    <br>
+                    What would you like to order now ?
+                </p>
+                <img src="images/Close.png" alt="close" class="close6">
+                <input type="text" placeholder="Enter your name..." class="name6"
+                    style="width: 600px; height:40px; margin-top:30px; margin-left: 50px; border: #111 1px solid;font-size: 26px;font-family: 'Times New Roman', Times, serif;">
+                <br>
+                <input type="number" maxlength="10" minlength="10" placeholder="Enter your phone no..."
+                    style="width: 300px; height:40px; margin-top:30px; margin-left: 50px; border: #111 1px solid;font-size: 26px;font-family: 'Times New Roman', Times, serif;">
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <label for="mushroom" style="margin-left: 50px;  font-size: 25px;">Mushroom Chilli</label>
+                <input type="checkbox" style="width: 18px; height: 18px;">
+                <label for="quanmush" style=" font-size: 25px; margin-left: 120px;">Quantity</label>
+                <input type="number" class="quanmush">
+                <br>
+                <br>
+                <label for="baby" style="margin-left: 50px; font-size: 25px;">Baby Corn Chilli</label>
+                <input type="checkbox" style="width: 18px; height: 18px;">
+                <label for="quanbaby" style=" font-size: 25px; margin-left: 123px;">Quantity</label>
+                <input type="number" class="quanbaby">
+                <br>
+                <br>
+                <label for="manchurian" style="margin-left: 50px;  font-size: 25px;">Cabbage Manchurian</label>
+                <input type="checkbox" style="width: 18px; height: 18px;">
+                <label for="quanmanchu" style=" font-size: 25px; margin-left: 84px;">Quantity</label>
+                <input type="number" class="quanmanchu">
+                <br>
+                <br>
+                <br>
+                <a href="#"><button class="pay6" onclick="myFunction6()">Pay</button></a>
+            </div>
+        </div>
+        <div class="paymentpage1">
+            <div class="paymentcomponent">
+                <img src="images/Close.png" alt="close" class="close7">
+                <p class="hello">Hello <span class="namer1"></span></p>
+                <p class="Parag">So, your total amount is :₹<span class="total1"></span></p>
+                <p class="Parag">So, your discounted amount is :₹<span class="discount1"></span></p>
+                <p class="Parag">So, your payable amount is :₹<span class="amount1"></span></p>
+                <button class="continue1">Continue</button>
+            </div>
+        </div>
+        <div class="paymentpage2">
+            <div class="paymentcomponent">
+                <img src="images/Close.png" alt="close" class="close8">
+                <p class="hello">Hello <span class="namer2"></span></p>
+                <p class="Parag">So, your total amount is :₹<span class="total2"></span></p>
+                <p class="Parag">So, your discounted amount is :₹<span class="discount2"></span></p>
+                <p class="Parag">So, your payable amount is :₹<span class="amount2"></span></p>
+                <button class="continue2">Continue</button>
+            </div>
+        </div>
+        <div class="paymentpage3">
+            <div class="paymentcomponent">
+                <img src="images/Close.png" alt="close" class="close9">
+                <p class="hello">Hello <span class="namer3"></span></p>
+                <p class="Parag">So, your total amount is :₹<span class="total3"></span></p>
+                <p class="Parag">So, your discounted amount is :₹<span class="discount3"></span></p>
+                <p class="Parag">So, your payable amount is :₹<span class="amount3"></span></p>
+                <button class="continue3">Continue</button>
+
+            </div>
+        </div>
+        <div class="paymentpage4">
+            <div class="paymentcomponent">
+                <img src="images/Close.png" alt="close" class="close10">
+                <p class="hello">Hello <span class="namer4"></span></p>
+                <p class="Parag">So, your total amount is :₹<span class="total4"></span></p>
+                <p class="Parag">So, your discounted amount is :₹<span class="discount4"></span></p>
+                <p class="Parag">So, your payable amount is :₹<span class="amount4"></span></p>
+                <button class="continue4">Continue</button>
+            </div>
+        </div>
+        <div class="paymentpage5">
+            <div class="paymentcomponent">
+                <img src="images/Close.png" alt="close" class="close11">
+                <p class="hello">Hello <span class="namer5"></span></p>
+                <p class="Parag">So, your total amount is :₹<span class="total5"></span></p>
+                <p class="Parag">So, your discounted amount is :₹<span class="discount5"></span></p>
+                <p class="Parag">So, your payable amount is :₹<span class="amount5"></span></p>
+                <button class="continue5">Continue</button>
+            </div>
+        </div>
+        <div class="paymentpage6">
+            <div class="paymentcomponent">
+                <img src="images/Close.png" alt="close" class="close12">
+                <p class="hello">Hello <span class="namer6"></span></p>
+                <p class="Parag">So, your total amount is :₹<span class="total6"></span></p>
+                <p class="Parag">So, your discounted amount is :₹<span class="discount6"></span></p>
+                <p class="Parag">So, your payable amount is :₹<span class="amount6"></span></p>
+                <button class="continue6">Continue</button>
+            </div>
+        </div>
+        <div class="thanks1">
+            <div class="thankscontent">
+                <img src="images/Close.png" alt="close" class="close13">
+                <img src="images/Tick.png" class="tick1" alt="">
+                <h2>Thank you very much <br>for ordering food.<br>from us</h2>
+            </div>
+        </div>
+        <div class="thanks2">
+            <div class="thankscontent">
+                <img src="images/Close.png" alt="close" class="close14">
+                <img src="images/Tick.png" class="tick2" alt="">
+                <h2>Thank you very much <br>for ordering food.<br>from us</h2>
+            </div>
+        </div>
+        <div class="thanks3">
+            <div class="thankscontent">
+                <img src="images/Close.png" alt="close" class="close15">
+                <img src="images/Tick.png" class="tick3" alt="">
+                <h2>Thank you very much <br>for ordering food.<br>from us</h2>
+            </div>
+        </div>
+        <div class="thanks4">
+            <div class="thankscontent">
+                <img src="images/Close.png" alt="close" class="close16">
+                <img src="images/Tick.png" class="tick4" alt="">
+                <h2>Thank you very much <br>for ordering food.<br>from us</h2>
+            </div>
+        </div>
+        <div class="thanks5">
+            <div class="thankscontent">
+                <img src="images/Close.png" alt="close" class="close17">
+                <img src="images/Tick.png" class="tick5" alt="">
+                <h2>Thank you very much <br>for ordering food.<br>from us</h2>
+            </div>
+        </div>
+        <div class="thanks6">
+            <div class="thankscontent">
+                <img src="images/Close.png" alt="close" class="close18">
+                <img src="images/Tick.png" class="tick6" alt="">
+                <h2>Thank you very much <br>for ordering food.<br>from us</h2>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="footer">
+        <br>
+        <div class="content">
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="#" class="fab fa-pinterest"></a>
+            </div>
+
+            <div class="links">
+                <a href="snacks.html">Home</a>
+                <a href="about us.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="index.html">Coffee</a>
+            </div>
+
+            <div class="credit">Created by <span><a href="">Rahul</a>,<a href="">Ankit</a>,Sovik,Satyam,Soumyadeep,Gouranga</span> | All Rights
+                Reserved
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector(".ser").addEventListener("click", function () {
+            document.querySelector(".popup1").style.display = "flex";
+        })
+        document.querySelector(".bur").addEventListener("click", function () {
+            document.querySelector(".popup1").style.display = "flex";
+        })
+        document.querySelector(".pas").addEventListener("click", function () {
+            document.querySelector(".popup1").style.display = "flex";
+        })
+        document.querySelector(".past").addEventListener("click", function () {
+            document.querySelector(".popup2").style.display = "flex";
+        })
+        document.querySelector(".chow").addEventListener("click", function () {
+            document.querySelector(".popup2").style.display = "flex";
+        })
+        document.querySelector(".bhat").addEventListener("click", function () {
+            document.querySelector(".popup4").style.display = "flex";
+        })
+        document.querySelector(".para").addEventListener("click", function () {
+            document.querySelector(".popup3").style.display = "flex";
+        })
+        document.querySelector(".dosa").addEventListener("click", function () {
+            document.querySelector(".popup3").style.display = "flex";
+        })
+        document.querySelector(".idli").addEventListener("click", function () {
+            document.querySelector(".popup3").style.display = "flex";
+        })
+        document.querySelector(".roll").addEventListener("click", function () {
+            document.querySelector(".popup2").style.display = "flex";
+        })
+        document.querySelector(".frmomo").addEventListener("click", function () {
+            document.querySelector(".popup4").style.display = "flex";
+        })
+        document.querySelector(".nood").addEventListener("click", function () {
+            document.querySelector(".popup5").style.display = "flex";
+        })
+        document.querySelector(".chili").addEventListener("click", function () {
+            document.querySelector(".popup5").style.display = "flex";
+        })
+        document.querySelector(".mush").addEventListener("click", function () {
+            document.querySelector(".popup6").style.display = "flex";
+        })
+        document.querySelector(".corn").addEventListener("click", function () {
+            document.querySelector(".popup6").style.display = "flex";
+        })
+        document.querySelector(".cabb").addEventListener("click", function () {
+            document.querySelector(".popup6").style.display = "flex";
+        })
+        document.querySelector(".biri").addEventListener("click", function () {
+            document.querySelector(".popup5").style.display = "flex";
+        })
+        document.querySelector(".momo").addEventListener("click", function () {
+            document.querySelector(".popup4").style.display = "flex";
+        })
+        document.querySelector('.close1').addEventListener("click", function () {
+            document.querySelector(".popup1").style.display = "none";
+        })
+        document.querySelector('.close2').addEventListener("click", function () {
+            document.querySelector(".popup2").style.display = "none";
+        })
+        document.querySelector('.close3').addEventListener("click", function () {
+            document.querySelector(".popup3").style.display = "none";
+        })
+        document.querySelector('.close4').addEventListener("click", function () {
+            document.querySelector(".popup4").style.display = "none";
+        })
+        document.querySelector('.close5').addEventListener("click", function () {
+            document.querySelector(".popup5").style.display = "none";
+        })
+        document.querySelector('.close6').addEventListener("click", function () {
+            document.querySelector(".popup6").style.display = "none";
+        })
+        document.querySelector(".pay1").addEventListener("click", function () {
+            document.querySelector(".paymentpage1").style.display = "flex";
+            document.querySelector(".popup1").style.display = "none";
+        })
+        document.querySelector('.close7').addEventListener("click", function () {
+            document.querySelector(".paymentpage1").style.display = "none";
+        })
+        document.querySelector(".pay2").addEventListener("click", function () {
+            document.querySelector(".paymentpage2").style.display = "flex";
+            document.querySelector(".popup2").style.display = "none";
+        })
+        document.querySelector('.close8').addEventListener("click", function () {
+            document.querySelector(".paymentpage2").style.display = "none";
+        })
+        document.querySelector(".pay3").addEventListener("click", function () {
+            document.querySelector(".paymentpage3").style.display = "flex";
+            document.querySelector(".popup3").style.display = "none";
+        })
+        document.querySelector('.close9').addEventListener("click", function () {
+            document.querySelector(".paymentpage3").style.display = "none";
+        })
+        document.querySelector(".pay4").addEventListener("click", function () {
+            document.querySelector(".paymentpage4").style.display = "flex";
+            document.querySelector(".popup4").style.display = "none";
+        })
+        document.querySelector('.close10').addEventListener("click", function () {
+            document.querySelector(".paymentpage4").style.display = "none";
+        })
+        document.querySelector(".pay5").addEventListener("click", function () {
+            document.querySelector(".paymentpage5").style.display = "flex";
+            document.querySelector(".popup5").style.display = "none";
+        })
+        document.querySelector('.close11').addEventListener("click", function () {
+            document.querySelector(".paymentpage5").style.display = "none";
+        })
+        document.querySelector(".pay6").addEventListener("click", function () {
+            document.querySelector(".paymentpage6").style.display = "flex";
+            document.querySelector(".popup6").style.display = "none";
+        })
+        document.querySelector('.close12').addEventListener("click", function () {
+            document.querySelector(".paymentpage6").style.display = "none";
+        })
+        function myFunction1() {
+            let txt = document.querySelector('.name1').value;
+            document.querySelector(".namer1").innerHTML = txt;
+            let pizza = document.querySelector('.quanpizza').value;
+            let burger = document.querySelector('.quanburg').value;
+            let pasta = document.querySelector('.quanpasta').value;
+            let total = 299 * pizza + 299 * burger + 99 * pasta;
+            document.querySelector(".total1").innerHTML = total;
+            discount = 0.2 * total;
+            amount = 0.8 * total;
+            document.querySelector(".discount1").innerHTML = discount;
+            document.querySelector(".amount1").innerHTML = amount;
+        }
+        function myFunction2() {
+            let txt = document.querySelector('.name2').value;
+            document.querySelector(".namer2").innerHTML = txt;
+            let pastry = document.querySelector('.quanpastry').value;
+            let chow = document.querySelector('.quanchow').value;
+            let roll = document.querySelector('.quanroll').value;
+            let total = 99 * pastry + 99 * chow + 99 * roll;
+            document.querySelector(".total2").innerHTML = total;
+            discount = 0.2 * total;
+            amount = 0.8 * total;
+            document.querySelector(".discount2").innerHTML = discount;
+            document.querySelector(".amount2").innerHTML = amount;
+        }
+        function myFunction3() {
+            let txt = document.querySelector('.name3').value;
+            document.querySelector(".namer3").innerHTML = txt;
+            let paratha = document.querySelector('.quanparatha').value;
+            let dosa = document.querySelector('.quandosa').value;
+            let idli = document.querySelector('.quanidli').value;
+            let total = 69 * paratha + 149 * dosa + 99 * idli;
+            document.querySelector(".total3").innerHTML = total;
+            discount = 0.2 * total;
+            amount = 0.8 * total;
+            document.querySelector(".discount3").innerHTML = discount;
+            document.querySelector(".amount3").innerHTML = amount;
+        }
+        function myFunction4() {
+            let txt = document.querySelector('.name4').value;
+            document.querySelector(".namer4").innerHTML = txt;
+            let chole = document.querySelector('.quanchole').value;
+            let momo = document.querySelector('.quanmomo').value;
+            let fried = document.querySelector('.quanfried').value;
+            let total = 69 * chole + 99 * momo + 149 * fried;
+            document.querySelector(".total4").innerHTML = total;
+            discount = 0.2 * total;
+            amount = 0.8 * total;
+            document.querySelector(".discount4").innerHTML = discount;
+            document.querySelector(".amount4").innerHTML = amount;
+        }
+        function myFunction5() {
+            let txt = document.querySelector('.name5').value;
+            document.querySelector(".namer5").innerHTML = txt;
+            let biri = document.querySelector('.quanbiri').value;
+            let hakka = document.querySelector('.quanhakka').value;
+            let chill = document.querySelector('.quanchilichicken').value;
+            let total = 199 * biri + 149 * hakka + 199 * chill;
+            document.querySelector(".total5").innerHTML = total;
+            discount = 0.2 * total;
+            amount = 0.8 * total;
+            document.querySelector(".discount5").innerHTML = discount;
+            document.querySelector(".amount5").innerHTML = amount;
+        }
+        function myFunction6() {
+            let txt = document.querySelector('.name6').value;
+            document.querySelector(".namer6").innerHTML = txt;
+            let mush = document.querySelector('.quanmush').value;
+            let baby = document.querySelector('.quanbaby').value;
+            let manchu = document.querySelector('.quanmanchu').value;
+            let total = 199 * mush + 199 * baby + 199 * manchu;
+            document.querySelector(".total6").innerHTML = total;
+            discount = 0.2 * total;
+            amount = 0.8 * total;
+            document.querySelector(".discount6").innerHTML = discount;
+            document.querySelector(".amount6").innerHTML = amount;
+        }
+        document.querySelector('.continue1').addEventListener("click", function () {
+            document.querySelector(".thanks1").style.display = "flex";
+        })
+        document.querySelector('.continue1').addEventListener("click", function () {
+            document.querySelector(".paymentpage1").style.display = "none";
+        })
+        document.querySelector('.close13').addEventListener("click", function () {
+            document.querySelector(".thanks1").style.display = "none";
+        })
+        document.querySelector('.continue2').addEventListener("click", function () {
+            document.querySelector(".thanks2").style.display = "flex";
+        })
+        document.querySelector('.continue2').addEventListener("click", function () {
+            document.querySelector(".paymentpage2").style.display = "none";
+        })
+        document.querySelector('.close14').addEventListener("click", function () {
+            document.querySelector(".thanks2").style.display = "none";
+        })
+        document.querySelector('.continue3').addEventListener("click", function () {
+            document.querySelector(".thanks3").style.display = "flex";
+        })
+        document.querySelector('.continue3').addEventListener("click", function () {
+            document.querySelector(".paymentpage3").style.display = "none";
+        })
+        document.querySelector('.close15').addEventListener("click", function () {
+            document.querySelector(".thanks3").style.display = "none";
+        })
+        document.querySelector('.continue4').addEventListener("click", function () {
+            document.querySelector(".thanks4").style.display = "flex";
+        })
+        document.querySelector('.continue4').addEventListener("click", function () {
+            document.querySelector(".paymentpage4").style.display = "none";
+        })
+        document.querySelector('.close16').addEventListener("click", function () {
+            document.querySelector(".thanks4").style.display = "none";
+        })
+        document.querySelector('.continue5').addEventListener("click", function () {
+            document.querySelector(".thanks5").style.display = "flex";
+        })
+        document.querySelector('.continue5').addEventListener("click", function () {
+            document.querySelector(".paymentpage5").style.display = "none";
+        })
+        document.querySelector('.close17').addEventListener("click", function () {
+            document.querySelector(".thanks5").style.display = "none";
+        })
+        document.querySelector('.continue6').addEventListener("click", function () {
+            document.querySelector(".thanks6").style.display = "flex";
+        })
+        document.querySelector('.continue6').addEventListener("click", function () {
+            document.querySelector(".paymentpage6").style.display = "none";
+        })
+        document.querySelector('.close18').addEventListener("click", function () {
+            document.querySelector(".thanks6").style.display = "none";
+        })
+    </script>
+</body>
+
+</html>
