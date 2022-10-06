@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Snacks Page</title>
 </head>
 <style>
@@ -92,6 +93,30 @@
     .container {
         display: block;
         margin-left: 160px;
+    }
+
+    .quanburg,
+    .quanpizza,
+    .quanpasta,
+    .quanchow,
+    .quanroll,
+    .quanpastry,
+    .quandosa,
+    .quanparatha,
+    .quanidli,
+    .quanchole,
+    .quanmomo,
+    .quanfried,
+    .quanchilichicken,
+    .quanhakka,
+    .quanbiri,
+    .quanmush,
+    .quanmanchu,
+    .quanbaby {
+        margin-left: 50px;
+        width: 60px;
+        font-size: 18px;
+        height: 30px;
     }
 
     .item {
@@ -235,6 +260,28 @@
         border-radius: 50%;
     }
 
+    .pizzalabel,
+    .burglabel,
+    .pastalabel,
+    .rolllabel,
+    .chowlabel,
+    .pastrylabel,
+    .parathalabel,
+    .dosalabel,
+    .idlilabel,
+    .cholelabel,
+    .momolabel,
+    .friedlabel,
+    .biriyanilabel,
+    .chilichickenlabel,
+    .hakkalabel,
+    .mushlabel,
+    .manchulabel,
+    .babylabel {
+        margin-left: 50px;
+        font-size: 25px;
+    }
+
     .pay1,
     .pay2,
     .pay3,
@@ -305,10 +352,34 @@
         margin-left: 70px;
     }
 
-    input[type=number] {
-        font-size: 20px;
-        width: 150px;
-        height: 30px;
+    .name1,
+    .name2,
+    .name3,
+    .name4,
+    .name5,
+    .name6 {
+        width: 600px;
+        height: 40px;
+        margin-top: 30px;
+        margin-left: 50px;
+        border: #111 1px solid;
+        font-size: 26px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .phone1,
+    .phone2,
+    .phone3,
+    .phone4,
+    .phone5,
+    .phone6 {
+        width: 300px;
+        height: 40px;
+        margin-top: 30px;
+        margin-left: 50px;
+        border: #111 1px solid;
+        font-size: 26px;
+        font-family: 'Times New Roman', Times, serif;
     }
 
     .paymentpage1 {
@@ -425,7 +496,25 @@
     .discount5,
     .amount5,
     .discount6,
-    .amount6 {
+    .amount6,
+    .pi,
+    .bu,
+    .pa,
+    .chopa,
+    .chicho,
+    .chiro,
+    .md,
+    .ap,
+    .id,
+    .chimo,
+    .frimo,
+    .chobha,
+    .cc,
+    .hn,
+    .chibi,
+    .cm,
+    .mc,
+    .bcc {
         margin-left: 5px;
     }
 
@@ -587,17 +676,382 @@
     .footer .content {
         margin-top: 20px;
     }
-    .footer .credit a{
+
+    .footer .credit a {
         color: azure;
         text-decoration: none;
     }
-    .footer .credit a:hover{
+
+    .footer .credit a:hover {
         color: burlywood;
+    }
+
+    .openmenu,
+    .closemenu {
+        display: none;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .openmenu {
+            display: block;
+            position: absolute;
+        }
+
+        .closemenu {
+            display: block;
+            z-index: 5;
+            position: absolute;
+            margin-left: -135px;
+            font-size: 20px;
+            margin-top: -2950px;
+        }
+
+        .navbar {
+            display: none;
+            position: fixed;
+            width: 170px;
+            flex-direction: column;
+            justify-content: center;
+            opacity: 0.8;
+            justify-content: center;
+            height: 3000px;
+            transition: top 1s ease;
+            align-items: center;
+        }
+
+        .navbar a {
+            display: block;
+            z-index: 5;
+            margin-left: -135px;
+            font-size: 25px;
+            margin-top: 50px;
+        }
+
+        .navbar p {
+            margin-top: -2700px;
+        }
+
+        .navbar img {
+            display: none;
+        }
+
+        .container {
+            margin-left: -38px;
+            margin-top: -40px;
+        }
+
+        .heap {
+            margin-left: 65px;
+            margin-top: -70px;
+            position: absolute;
+            font-size: 32px;
+        }
+
+        .popup1 {
+            margin-left: 250px;
+            width: 320px;
+            height: 540px;
+            margin-top: 250px;
+        }
+
+        .popup2 {
+            margin-left: 250px;
+            width: 320px;
+            height: 540px;
+            margin-top: 1600px;
+        }
+
+        .popup3 {
+            margin-left: 250px;
+            width: 320px;
+            height: 540px;
+            margin-top: 3000px;
+        }
+
+        .popup4 {
+            margin-left: 250px;
+            width: 320px;
+            height: 540px;
+            margin-top: 4500px;
+        }
+
+        .popup5 {
+            margin-left: 250px;
+            width: 320px;
+            height: 540px;
+            margin-top: 6000px;
+        }
+
+        .popup6 {
+            margin-left: 250px;
+            width: 320px;
+            height: 540px;
+            margin-top: 7000px;
+        }
+
+        .paymentpage1 {
+            margin-left: 250px;
+            width: 320px;
+            margin-top: 250px;
+            height: 540px;
+            font-size: 25px;
+        }
+
+        .paymentpage2 {
+            margin-left: 250px;
+            width: 320px;
+            height: 540px;
+            font-size: 25px;
+        }
+
+        .paymentpage3 {
+            margin-left: 250px;
+            width: 320px;
+            height: 540px;
+            font-size: 25px;
+        }
+
+        .paymentpage4 {
+            margin-left: 250px;
+            width: 320px;
+            height: 540px;
+            font-size: 25px;
+        }
+
+        .paymentpage5 {
+            margin-left: 250px;
+            width: 320px;
+            height: 540px;
+            font-size: 25px;
+        }
+
+        .paymentpage6 {
+            margin-left: 250px;
+            width: 320px;
+            height: 520px;
+            font-size: 25px;
+        }
+
+        .thanks1 {
+            margin-left: 100px;
+            width: 300px;
+            height: 240px;
+            font-size: 20px;
+        }
+
+        .thanks2 {
+            margin-left: 100px;
+            width: 300px;
+            height: 240px;
+            font-size: 20px;
+        }
+
+        .thanks3 {
+            margin-left: 100px;
+            width: 300px;
+            height: 240px;
+            font-size: 20px;
+        }
+
+        .thanks4 {
+            margin-left: 100px;
+            width: 300px;
+            height: 340px;
+            font-size: 20px;
+        }
+
+        .thanks5 {
+            margin-left: 100px;
+            width: 300px;
+            height: 240px;
+            font-size: 20px;
+        }
+
+        .thanks6 {
+            margin-left: 100px;
+            width: 300px;
+            height: 240px;
+            font-size: 20px;
+        }
+
+        .greet {
+            margin-left: 10px;
+            font-size: 20px;
+        }
+
+
+        .food1,
+        .food2,
+        .food3,
+        .food4,
+        .food5,
+        .food6 {
+            margin-left: -30px;
+        }
+
+
+
+        .food1 label,
+        .food2 label,
+        .food3 label,
+        .food4 label,
+        .food5 label,
+        .food6 label {
+            font-size: 18px;
+        }
+
+
+        .pizzaqua,
+        .burgqua,
+        .pastaqua,
+        .pastryqua,
+        .rollqua,
+        .chowqua,
+        .parathaqua,
+        .dosaqua,
+        .idliqua,
+        .momoqua,
+        .friedqua,
+        .cholequa,
+        .hakkaqua,
+        .chilichickenqua,
+        .biriqua,
+        .babyqua,
+        .mushqua,
+        .manchuqua {
+            display: none;
+        }
+
+        .popup1 .person,
+        .popup2 .person,
+        .popup3 .person,
+        .popup4 .person,
+        .popup5 .person,
+        .popup6 .person {
+            display: none;
+        }
+
+        .quanburg,
+        .quanpizza,
+        .quanpasta,
+        .quanchow,
+        .quanroll,
+        .quanpastry,
+        .quandosa,
+        .quanparatha,
+        .quanidli,
+        .quanchole,
+        .quanmomo,
+        .quanfried,
+        .quanchilichicken,
+        .quanhakka,
+        .quanbiri,
+        .quanmush,
+        .quanmanchu,
+        .quanbaby {
+            margin-left: 50px;
+            width: 40px;
+            height: 20px;
+        }
+
+        .footer {
+            margin-top: 7700px;
+            height: 280px;
+        }
+
+        .footer .content {
+            margin-left: -400px;
+        }
+
+        .footer .share {
+            margin-left: 420px;
+        }
+
+        .footer .links {
+            margin-left: 410px;
+        }
+
+        .footer .links a {
+            margin-left: 18px;
+            font-size: 22px;
+        }
+
+        .footer .credit {
+            font-size: 19px;
+            display: inline-block;
+            margin-left: 410px;
+        }
+
+        .name1,
+        .name2,
+        .name3,
+        .name4,
+        .name5,
+        .name6 {
+            width: 280px;
+            height: 30px;
+            margin-top: 30px;
+            margin-left: 50px;
+            border: #111 1px solid;
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .phone1,
+        .phone2,
+        .phone3,
+        .phone4,
+        .phone5,
+        .phone6 {
+            width: 280px;
+            height: 30px;
+            margin-top: 30px;
+            margin-left: 50px;
+            border: #111 1px solid;
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .pay1,
+        .pay2,
+        .pay3,
+        .pay4,
+        .pay5,
+        .pay6,
+        .continue1,
+        .continue2,
+        .continue3,
+        .continue4,
+        .continue5,
+        .continue6 {
+            margin-left: 50px;
+            margin-top: 0px;
+            width: 100px;
+            background-color: rgb(51, 51, 230);
+            color: white;
+            height: 30px;
+            font-size: 22px;
+        }
+
+        .tick1,
+        .tick2,
+        .tick3,
+        .tick4,
+        .tick5,
+        .tick6 {
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+        }
+
     }
 </style>
 
 <body>
+    <div class="openmenu"><i class="fa fa-bars"></i></div>
     <nav class="navbar">
+        <div class="closemenu"><i class="fa fa-times"></i></div>
         <img src="images/logo.png" alt="">
         <p>
             <a href="snacks.html">Home</a>
@@ -730,32 +1184,34 @@
                     What would you like to order now ?
                 </p>
                 <img src="images/Close.png" alt="close" class="close1">
-                <input type="text" placeholder="Enter your name..." class="name1"
-                    style="width: 600px; height:40px; margin-top:30px; margin-left: 50px; border: #111 1px solid;font-size: 26px; font-family: 'Times New Roman', Times, serif;">
-                <br>
-                <input type="number" maxlength="10" minlength="10" placeholder="Enter your phone no..."
-                    style="width: 300px; height:40px; margin-top:30px; margin-left: 50px; border: #111 1px solid;font-size: 26px; font-family: 'Times New Roman', Times, serif;">
-                <br>
-                <br>
-                <br>
-                <br>
-
-                <label for="pizza" style="margin-left: 50px;  font-size: 25px;">Cheese Pizza</label>
-                <input type="checkbox" style="width: 18px; height: 18px;">
-                <label for="quanpizza" style=" font-size: 25px; margin-left: 100px;">Quantity</label>
-                <input type="number" class="quanpizza" value="0">
-                <br>
-                <br>
-                <label for="burger" style="margin-left: 50px; font-size: 25px;">Chicken Burger</label>
-                <input type="checkbox" style="width: 18px; height: 18px;">
-                <label for="quanbur" style=" font-size: 25px; margin-left: 75px;">Quantity</label>
-                <input type="number" class="quanburg" value="0">
-                <br>
-                <br>
-                <label for="pasta" style="margin-left: 50px;  font-size: 25px;">Veg Pasta</label>
-                <input type="checkbox" style="width: 18px; height: 18px;">
-                <label for="quanpasta" style=" font-size: 25px; margin-left: 136px;">Quantity</label>
-                <input type="number" class="quanpasta" value="0">
+                <div class="food1">
+                    <input type="text" placeholder="Enter your name..." class="name1">
+                    <br>
+                    <input type="number" maxlength="10" minlength="10" placeholder="Enter your phone no..."
+                        class="phone1">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <label for="pizza" class="pizzalabel">Cheese Pizza</label>
+                    <input type="checkbox" style="width: 18px; height: 18px;">
+                    <label for="quanpizza" style=" font-size: 25px; margin-left: 100px;"
+                        class="pizzaqua">Quantity</label>
+                    <input type="number" class="quanpizza" value="0">
+                    <br>
+                    <br>
+                    <label for="burger" class="burglabel">Chicken Burger</label>
+                    <input type="checkbox" style="width: 18px; height: 18px;">
+                    <label for="quanbur" style=" font-size: 25px; margin-left: 75px;" class="burgqua">Quantity</label>
+                    <input type="number" class="quanburg" value="0">
+                    <br>
+                    <br>
+                    <label for="pasta" class="pastalabel">Veg Pasta</label>
+                    <input type="checkbox" style="width: 18px; height: 18px;">
+                    <label for="quanpasta" style=" font-size: 25px; margin-left: 136px;"
+                        class="pastaqua">Quantity</label>
+                    <input type="number" class="quanpasta" value="0">
+                </div>
                 <br>
                 <br>
 
@@ -770,32 +1226,34 @@
                     What would you like to order now ?
                 </p>
                 <img src="images/Close.png" alt="close" class="close2">
-                <input type="text" placeholder="Enter your name..." class="name2"
-                    style="width: 600px; height:40px; margin-top:30px; margin-left: 50px; border: #111 1px solid;font-size: 26px; font-family: 'Times New Roman', Times, serif;">
-                <br>
-                <input type="number" maxlength="10" minlength="10" placeholder="Enter your phone no..."
-                    style="width: 300px; height:40px; margin-top:30px; margin-left: 50px; border: #111 1px solid;font-size: 26px;font-family: 'Times New Roman', Times, serif;">
-                <br>
-                <br>
-                <br>
-                <br>
+                <div class="food2">
+                    <input type="text" placeholder="Enter your name..." class="name2">
+                    <br>
+                    <input type="number" maxlength="10" minlength="10" placeholder="Enter your phone no..."
+                        class="phone2">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
 
-                <label for="pastry" style="margin-left: 50px;  font-size: 25px;">Chocolate Pastry</label>
-                <input type="checkbox" style="width: 18px; height: 18px;">
-                <label for="quanpastry" style=" font-size: 25px; margin-left: 100px;">Quantity</label>
-                <input type="number" class="quanpastry" value="0">
-                <br>
-                <br>
-                <label for="chow" style="margin-left: 50px; font-size: 25px;">Chicken Chowmein</label>
-                <input type="checkbox" style="width: 18px; height: 18px;">
-                <label for="quanchow" style=" font-size: 25px; margin-left: 72px;">Quantity</label>
-                <input type="number" class="quanchow" value="0">
-                <br>
-                <br>
-                <label for="roll" style="margin-left: 50px;  font-size: 25px;">Chicken Roll</label>
-                <input type="checkbox" style="width: 18px; height: 18px;">
-                <label for="quanpasta" style=" font-size: 25px; margin-left: 140px;">Quantity</label>
-                <input type="number" class="quanroll" value="0">
+                    <label for="pastry" class="pastrylabel">Chocolate Pastry</label>
+                    <input type="checkbox" style="width: 18px; height: 18px;">
+                    <label for="quanpastry" style=" font-size: 25px; margin-left: 100px;"
+                        class="pastryqua">Quantity</label>
+                    <input type="number" class="quanpastry" value="0">
+                    <br>
+                    <br>
+                    <label for="chow" class="chowlabel">Chicken Chowmein</label>
+                    <input type="checkbox" style="width: 18px; height: 18px;">
+                    <label for="quanchow" style=" font-size: 25px; margin-left: 72px;" class="chowqua">Quantity</label>
+                    <input type="number" class="quanchow" value="0">
+                    <br>
+                    <br>
+                    <label for="roll" class="rolllabel">Chicken Roll</label>
+                    <input type="checkbox" style="width: 18px; height: 18px;">
+                    <label for="quanroll" style=" font-size: 25px; margin-left: 140px;" class="rollqua">Quantity</label>
+                    <input type="number" class="quanroll" value="0">
+                </div>
                 <br>
                 <br>
                 <br>
@@ -811,32 +1269,34 @@
                     What would you like to order now ?
                 </p>
                 <img src="images/Close.png" alt="close" class="close3">
-                <input type="text" placeholder="Enter your name..." class="name3"
-                    style="width: 600px; height:40px; margin-top:30px; margin-left: 50px; border: #111 1px solid;font-size: 26px; font-family: 'Times New Roman', Times, serif;">
-                <br>
-                <input type="number" maxlength="10" minlength="10" placeholder="Enter your phone no..."
-                    style="width: 300px; height:40px; margin-top:30px; margin-left: 50px; border: #111 1px solid;font-size: 26px;font-family: 'Times New Roman', Times, serif;">
-                <br>
-                <br>
-                <br>
-                <br>
+                <div class="food3">
+                    <input type="text" placeholder="Enter your name..." class="name3">
+                    <br>
+                    <input type="number" maxlength="10" minlength="10" placeholder="Enter your phone no..."
+                        class="phone3">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
 
-                <label for="paratha" style="margin-left: 50px;  font-size: 25px;">Aaloo Parathe</label>
-                <input type="checkbox" style="width: 18px; height: 18px;">
-                <label for="quanparatha" style=" font-size: 25px; margin-left: 100px;">Quantity</label>
-                <input type="number" class="quanparatha" value="0">
-                <br>
-                <br>
-                <label for="dosa" style="margin-left: 50px; font-size: 25px;">Masala Dosa</label>
-                <input type="checkbox" style="width: 18px; height: 18px;">
-                <label for="quandosa" style=" font-size: 25px; margin-left: 115px;">Quantity</label>
-                <input type="number" class="quandosa" value="0">
-                <br>
-                <br>
-                <label for="idli" style="margin-left: 50px;  font-size: 25px;">Idli</label>
-                <input type="checkbox" style="width: 18px; height: 18px;">
-                <label for="quanidli" style=" font-size: 25px; margin-left: 210px;">Quantity</label>
-                <input type="number" class="quanidli" value="0">
+                    <label for="paratha" class="parathalabel">Aaloo Parathe</label>
+                    <input type="checkbox" style="width: 18px; height: 18px;">
+                    <label for="quanparatha" style=" font-size: 25px; margin-left: 100px;"
+                        class="parathaqua">Quantity</label>
+                    <input type="number" class="quanparatha" value="0">
+                    <br>
+                    <br>
+                    <label for="dosa" class="dosalabel">Masala Dosa</label>
+                    <input type="checkbox" style="width: 18px; height: 18px;">
+                    <label for="quandosa" style=" font-size: 25px; margin-left: 115px;" class="dosaqua">Quantity</label>
+                    <input type="number" class="quandosa" value="0">
+                    <br>
+                    <br>
+                    <label for="idli" class="idlilabel">Idli</label>
+                    <input type="checkbox" style="width: 18px; height: 18px;">
+                    <label for="quanidli" style=" font-size: 25px; margin-left: 210px;" class="idliqua">Quantity</label>
+                    <input type="number" class="quanidli" value="0">
+                </div>
                 <br>
                 <br>
                 <br>
@@ -851,32 +1311,35 @@
                     What would you like to order now ?
                 </p>
                 <img src="images/Close.png" alt="close" class="close4">
-                <input type="text" placeholder="Enter your name..." class="name4"
-                    style="width: 600px; height:40px; margin-top:30px; margin-left: 50px; border: #111 1px solid;font-size: 26px;font-family: 'Times New Roman', Times, serif;">
-                <br>
-                <input type="number" maxlength="10" minlength="10" placeholder="Enter your phone no..."
-                    style="width: 300px; height:40px; margin-top:30px; margin-left: 50px; border: #111 1px solid;font-size: 26px;font-family: 'Times New Roman', Times, serif;">
-                <br>
-                <br>
-                <br>
-                <br>
+                <div class="food4">
+                    <input type="text" placeholder="Enter your name..." class="name4">
+                    <br>
+                    <input type="number" maxlength="10" minlength="10" placeholder="Enter your phone no..."
+                        class="phone4">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
 
-                <label for="chole" style="margin-left: 50px;  font-size: 25px;">Chole Bhature</label>
-                <input type="checkbox" style="width: 18px; height: 18px;">
-                <label for="quanchole" style=" font-size: 25px; margin-left: 125px;">Quantity</label>
-                <input type="number" class="quanchole" value="0">
-                <br>
-                <br>
-                <label for="momo" style="margin-left: 50px; font-size: 25px;">Chicken Momo</label>
-                <input type="checkbox" style="width: 18px; height: 18px;">
-                <label for="quanmomo" style=" font-size: 25px; margin-left: 115px;">Quantity</label>
-                <input type="number" class="quanmomo" value="0">
-                <br>
-                <br>
-                <label for="friedmomo" style="margin-left: 50px;  font-size: 25px;">Fried Momos</label>
-                <input type="checkbox" style="width: 18px; height: 18px;">
-                <label for="quanfried" style=" font-size: 25px; margin-left: 136px;">Quantity</label>
-                <input type="number" class="quanfried" value="0">
+                    <label for="chole" class="cholelabel">Chole Bhature</label>
+                    <input type="checkbox" style="width: 18px; height: 18px;">
+                    <label for="quanchole" style=" font-size: 25px; margin-left: 125px;"
+                        class="cholequa">Quantity</label>
+                    <input type="number" class="quanchole" value="0">
+                    <br>
+                    <br>
+                    <label for="momo" class="momolabel">Chicken Momo</label>
+                    <input type="checkbox" style="width: 18px; height: 18px;">
+                    <label for="quanmomo" style=" font-size: 25px; margin-left: 115px;" class="momoqua">Quantity</label>
+                    <input type="number" class="quanmomo" value="0">
+                    <br>
+                    <br>
+                    <label for="friedmomo" class="friedlabel">Fried Momos</label>
+                    <input type="checkbox" style="width: 18px; height: 18px;">
+                    <label for="quanfried" style=" font-size: 25px; margin-left: 136px;"
+                        class="friedqua">Quantity</label>
+                    <input type="number" class="quanfried" value="0">
+                </div>
                 <br>
                 <br>
                 <br>
@@ -891,32 +1354,35 @@
                     What would you like to order now ?
                 </p>
                 <img src="images/Close.png" alt="close" class="close5">
-                <input type="text" placeholder="Enter your name..." class="name5"
-                    style="width: 600px; height:40px; margin-top:30px; margin-left: 50px; border: #111 1px solid;font-size: 26px;font-family: 'Times New Roman', Times, serif;">
-                <br>
-                <input type="number" maxlength="10" minlength="10" placeholder="Enter your phone no..."
-                    style="width: 300px; height:40px; margin-top:30px; margin-left: 50px; border: #111 1px solid;font-size: 26px;font-family: 'Times New Roman', Times, serif;">
-                <br>
-                <br>
-                <br>
-                <br>
+                <div class="food5">
+                    <input type="text" placeholder="Enter your name..." class="name5">
+                    <br>
+                    <input type="number" maxlength="10" minlength="10" placeholder="Enter your phone no..."
+                        class="phone5">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
 
-                <label for="biriyani" style="margin-left: 50px;  font-size: 25px;">Chicken Biriyani</label>
-                <input type="checkbox" style="width: 18px; height: 18px;">
-                <label for="quanbiri" style=" font-size: 25px; margin-left: 110px;">Quantity</label>
-                <input type="number" class="quanbiri" value="0">
-                <br>
-                <br>
-                <label for="hakka" style="margin-left: 50px; font-size: 25px;">Hakka Noodles</label>
-                <input type="checkbox" style="width: 18px; height: 18px;">
-                <label for="quanhakka" style=" font-size: 25px; margin-left: 127px;">Quantity</label>
-                <input type="number" class="quanhakka" value="0">
-                <br>
-                <br>
-                <label for="chillichicken" style="margin-left: 50px;  font-size: 25px;">Chilli Chicken</label>
-                <input type="checkbox" style="width: 18px; height: 18px;">
-                <label for="quanchilichicken" style=" font-size: 25px; margin-left: 136px;">Quantity</label>
-                <input type="number" class="quanchilichicken" value="0">
+                    <label for="biriyani" class="biriyanilabel">Chicken Biriyani</label>
+                    <input type="checkbox" style="width: 18px; height: 18px;">
+                    <label for="quanbiri" style=" font-size: 25px; margin-left: 110px;" class="biriqua">Quantity</label>
+                    <input type="number" class="quanbiri" value="0">
+                    <br>
+                    <br>
+                    <label for="hakka" class="hakkalabel">Hakka Noodles</label>
+                    <input type="checkbox" style="width: 18px; height: 18px;">
+                    <label for="quanhakka" style=" font-size: 25px; margin-left: 127px;"
+                        class="hakkaqua">Quantity</label>
+                    <input type="number" class="quanhakka" value="0">
+                    <br>
+                    <br>
+                    <label for="chillichicken" class="chilichickenlabel">Chilli Chicken</label>
+                    <input type="checkbox" style="width: 18px; height: 18px;">
+                    <label for="quanchilichicken" style=" font-size: 25px; margin-left: 136px;"
+                        class="chilichickenqua">Quantity</label>
+                    <input type="number" class="quanchilichicken" value="0">
+                </div>
                 <br>
                 <br>
                 <br>
@@ -931,32 +1397,34 @@
                     What would you like to order now ?
                 </p>
                 <img src="images/Close.png" alt="close" class="close6">
-                <input type="text" placeholder="Enter your name..." class="name6"
-                    style="width: 600px; height:40px; margin-top:30px; margin-left: 50px; border: #111 1px solid;font-size: 26px;font-family: 'Times New Roman', Times, serif;">
-                <br>
-                <input type="number" maxlength="10" minlength="10" placeholder="Enter your phone no..."
-                    style="width: 300px; height:40px; margin-top:30px; margin-left: 50px; border: #111 1px solid;font-size: 26px;font-family: 'Times New Roman', Times, serif;">
-                <br>
-                <br>
-                <br>
-                <br>
+                <div class="food6">
+                    <input type="text" placeholder="Enter your name..." class="name6">
+                    <br>
+                    <input type="number" maxlength="10" minlength="10" placeholder="Enter your phone no..."
+                        class="phone6">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
 
-                <label for="mushroom" style="margin-left: 50px;  font-size: 25px;">Mushroom Chilli</label>
-                <input type="checkbox" style="width: 18px; height: 18px;">
-                <label for="quanmush" style=" font-size: 25px; margin-left: 120px;">Quantity</label>
-                <input type="number" class="quanmush">
-                <br>
-                <br>
-                <label for="baby" style="margin-left: 50px; font-size: 25px;">Baby Corn Chilli</label>
-                <input type="checkbox" style="width: 18px; height: 18px;">
-                <label for="quanbaby" style=" font-size: 25px; margin-left: 123px;">Quantity</label>
-                <input type="number" class="quanbaby">
-                <br>
-                <br>
-                <label for="manchurian" style="margin-left: 50px;  font-size: 25px;">Cabbage Manchurian</label>
-                <input type="checkbox" style="width: 18px; height: 18px;">
-                <label for="quanmanchu" style=" font-size: 25px; margin-left: 84px;">Quantity</label>
-                <input type="number" class="quanmanchu">
+                    <label for="mushroom" class="mushlabel">Mushroom Chilli</label>
+                    <input type="checkbox" style="width: 18px; height: 18px;">
+                    <label for="quanmush" style=" font-size: 25px; margin-left: 120px;" class="mushqua">Quantity</label>
+                    <input type="number" class="quanmush" value="0">
+                    <br>
+                    <br>
+                    <label for="baby" class="babylabel">Baby Corn Chilli</label>
+                    <input type="checkbox" style="width: 18px; height: 18px;">
+                    <label for="quanbaby" style=" font-size: 25px; margin-left: 123px;" class="babyqua">Quantity</label>
+                    <input type="number" class="quanbaby" value="0">
+                    <br>
+                    <br>
+                    <label for="manchurian" class="manchulabel">Cabbage Manchurian</label>
+                    <input type="checkbox" style="width: 18px; height: 18px;">
+                    <label for="quanmanchu" style=" font-size: 25px; margin-left: 84px;"
+                        class="manchuqua">Quantity</label>
+                    <input type="number" class="quanmanchu" value="0">
+                </div>
                 <br>
                 <br>
                 <br>
@@ -967,6 +1435,9 @@
             <div class="paymentcomponent">
                 <img src="images/Close.png" alt="close" class="close7">
                 <p class="hello">Hello <span class="namer1"></span></p>
+                <p class="Parag">Cheese Pizza : <span class="pi"></span></p>
+                <p class="Parag">Chicken Burger : <span class="bu"></span></p>
+                <p class="Parag">Veg Pasta : <span class="pa"></span></p>
                 <p class="Parag">So, your total amount is :₹<span class="total1"></span></p>
                 <p class="Parag">So, your discounted amount is :₹<span class="discount1"></span></p>
                 <p class="Parag">So, your payable amount is :₹<span class="amount1"></span></p>
@@ -977,6 +1448,9 @@
             <div class="paymentcomponent">
                 <img src="images/Close.png" alt="close" class="close8">
                 <p class="hello">Hello <span class="namer2"></span></p>
+                <p class="Parag">Chocolate Pastry : <span class="chopa"></span></p>
+                <p class="Parag">Chicken Chowmein : <span class="chicho"></span></p>
+                <p class="Parag">Chicken Roll : <span class="chiro"></span></p>
                 <p class="Parag">So, your total amount is :₹<span class="total2"></span></p>
                 <p class="Parag">So, your discounted amount is :₹<span class="discount2"></span></p>
                 <p class="Parag">So, your payable amount is :₹<span class="amount2"></span></p>
@@ -987,6 +1461,9 @@
             <div class="paymentcomponent">
                 <img src="images/Close.png" alt="close" class="close9">
                 <p class="hello">Hello <span class="namer3"></span></p>
+                <p class="Parag">Aaloo Parathe : <span class="ap"></span></p>
+                <p class="Parag">Masala Dosa : <span class="md"></span></p>
+                <p class="Parag">Idli : <span class="id"></span></p>
                 <p class="Parag">So, your total amount is :₹<span class="total3"></span></p>
                 <p class="Parag">So, your discounted amount is :₹<span class="discount3"></span></p>
                 <p class="Parag">So, your payable amount is :₹<span class="amount3"></span></p>
@@ -998,6 +1475,9 @@
             <div class="paymentcomponent">
                 <img src="images/Close.png" alt="close" class="close10">
                 <p class="hello">Hello <span class="namer4"></span></p>
+                <p class="Parag">Chole Bhature : <span class="chobha"></span></p>
+                <p class="Parag">Chicken Momo : <span class="chimo"></span></p>
+                <p class="Parag">Fried Momos : <span class="frimo"></span></p>
                 <p class="Parag">So, your total amount is :₹<span class="total4"></span></p>
                 <p class="Parag">So, your discounted amount is :₹<span class="discount4"></span></p>
                 <p class="Parag">So, your payable amount is :₹<span class="amount4"></span></p>
@@ -1008,6 +1488,9 @@
             <div class="paymentcomponent">
                 <img src="images/Close.png" alt="close" class="close11">
                 <p class="hello">Hello <span class="namer5"></span></p>
+                <p class="Parag">Chicken Biriyani : <span class="chibi"></span></p>
+                <p class="Parag">Hakka Noodles : <span class="hn"></span></p>
+                <p class="Parag">Chilli Chicken : <span class="cc"></span></p>
                 <p class="Parag">So, your total amount is :₹<span class="total5"></span></p>
                 <p class="Parag">So, your discounted amount is :₹<span class="discount5"></span></p>
                 <p class="Parag">So, your payable amount is :₹<span class="amount5"></span></p>
@@ -1018,6 +1501,9 @@
             <div class="paymentcomponent">
                 <img src="images/Close.png" alt="close" class="close12">
                 <p class="hello">Hello <span class="namer6"></span></p>
+                <p class="Parag">Mushroom Chilli : <span class="mc"></span></p>
+                <p class="Parag">Baby Corn Chilli : <span class="bcc"></span></p>
+                <p class="Parag">Cabbage Manchurian : <span class="cm"></span></p>
                 <p class="Parag">So, your total amount is :₹<span class="total6"></span></p>
                 <p class="Parag">So, your discounted amount is :₹<span class="discount6"></span></p>
                 <p class="Parag">So, your payable amount is :₹<span class="amount6"></span></p>
@@ -1076,11 +1562,11 @@
         <br>
         <div class="content">
             <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-                <a href="#" class="fab fa-pinterest"></a>
+                <a href="" class="fab fa-facebook-f"></a>
+                <a href="" class="fab fa-github"></a>
+                <a href="" class="fab fa-youtube"></a>
+                <a href="https://www.linkedin.com/in/rahul-mandal-a95b57210/" class="fab fa-linkedin"></a>
+                <a href="" class="fab fa-instagram"></a>
             </div>
 
             <div class="links">
@@ -1090,7 +1576,8 @@
                 <a href="index.html">Coffee</a>
             </div>
 
-            <div class="credit">Created by <span><a href="">Rahul</a>,<a href="">Ankit</a>,Sovik,Satyam,Soumyadeep,Gouranga</span> | All Rights
+            <div class="credit">Created by <span><a href="">Rahul</a>,<a href="">Ankit</a>, Sovik, Satyam, Soumyadeep,
+                    Gouranga</span> | All Rights
                 Reserved
             </div>
         </div>
@@ -1222,6 +1709,9 @@
             amount = 0.8 * total;
             document.querySelector(".discount1").innerHTML = discount;
             document.querySelector(".amount1").innerHTML = amount;
+            document.querySelector(".pi").innerHTML = pizza;
+            document.querySelector(".bu").innerHTML = burger;
+            document.querySelector(".pa").innerHTML = pasta;
         }
         function myFunction2() {
             let txt = document.querySelector('.name2').value;
@@ -1235,6 +1725,9 @@
             amount = 0.8 * total;
             document.querySelector(".discount2").innerHTML = discount;
             document.querySelector(".amount2").innerHTML = amount;
+            document.querySelector(".chopa").innerHTML = pastry;
+            document.querySelector(".chiro").innerHTML = roll;
+            document.querySelector(".chicho").innerHTML = chow;
         }
         function myFunction3() {
             let txt = document.querySelector('.name3').value;
@@ -1248,6 +1741,9 @@
             amount = 0.8 * total;
             document.querySelector(".discount3").innerHTML = discount;
             document.querySelector(".amount3").innerHTML = amount;
+            document.querySelector(".ap").innerHTML = paratha;
+            document.querySelector(".md").innerHTML = dosa;
+            document.querySelector(".id").innerHTML = idli;
         }
         function myFunction4() {
             let txt = document.querySelector('.name4').value;
@@ -1261,6 +1757,9 @@
             amount = 0.8 * total;
             document.querySelector(".discount4").innerHTML = discount;
             document.querySelector(".amount4").innerHTML = amount;
+            document.querySelector(".chobha").innerHTML = chole;
+            document.querySelector(".chimo").innerHTML = momo;
+            document.querySelector(".frimo").innerHTML = fried;
         }
         function myFunction5() {
             let txt = document.querySelector('.name5').value;
@@ -1274,6 +1773,9 @@
             amount = 0.8 * total;
             document.querySelector(".discount5").innerHTML = discount;
             document.querySelector(".amount5").innerHTML = amount;
+            document.querySelector(".chibi").innerHTML = biri;
+            document.querySelector(".hn").innerHTML = hakka;
+            document.querySelector(".cc").innerHTML = chill;
         }
         function myFunction6() {
             let txt = document.querySelector('.name6').value;
@@ -1287,6 +1789,9 @@
             amount = 0.8 * total;
             document.querySelector(".discount6").innerHTML = discount;
             document.querySelector(".amount6").innerHTML = amount;
+            document.querySelector(".mc").innerHTML = mush;
+            document.querySelector(".bcc").innerHTML = baby;
+            document.querySelector(".cm").innerHTML = manchu;
         }
         document.querySelector('.continue1').addEventListener("click", function () {
             document.querySelector(".thanks1").style.display = "flex";
@@ -1342,6 +1847,21 @@
         document.querySelector('.close18').addEventListener("click", function () {
             document.querySelector(".thanks6").style.display = "none";
         })
+        const openmenu = document.querySelector('.openmenu');
+        const closemenu = document.querySelector('.closemenu');
+        const maincont = document.querySelector('.navbar');
+        openmenu.addEventListener('click', show);
+        closemenu.addEventListener('click', close);
+        function show() {
+            maincont.style.display = 'flex';
+            openmenu.style.display = 'none';
+            closemenu.style.display = 'flex';
+        }
+        function close() {
+            maincont.style.display = 'none';
+            openmenu.style.display = 'flex';
+            closemenu.style.display = 'none';
+        }
     </script>
 </body>
 
