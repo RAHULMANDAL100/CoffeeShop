@@ -21,7 +21,7 @@ Location and Communication:
 ![Screenshot 2022-11-04 223104](https://user-images.githubusercontent.com/91194192/200033905-f3a4a6bf-d4ea-4ec1-8971-cc242c2a22c2.png)
 
 Blogs:
-
+![Screenshot 2022-11-04 224131](https://user-images.githubusercontent.com/91194192/200035913-6e117e54-11e8-4d0c-8e60-35f8c17c965f.png)
 
 Social media handle of leader and contributors:
 
