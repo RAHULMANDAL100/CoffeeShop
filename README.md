@@ -25,3 +25,10 @@ Blogs:
 
 Social media handle of leader and contributors:
 ![Screenshot 2022-11-04 224424](https://user-images.githubusercontent.com/91194192/200036233-fb8de718-99b4-47fd-a834-8664ff174bed.png)
+
+Snacks section:
+![Screenshot 2022-11-04 225148](https://user-images.githubusercontent.com/91194192/200038191-3ee52391-5dc3-4f5f-abff-5238be717464.png)
+
+![Screenshot 2022-11-04 225358](https://user-images.githubusercontent.com/91194192/200038204-9f8b6e2a-8d24-4af7-b768-93ac45e4fb1b.png)
+
+![Screenshot 2022-11-04 225444](https://user-images.githubusercontent.com/91194192/200038223-b62f412d-d05e-4dd2-baf4-c5639b0e59c0.png)
