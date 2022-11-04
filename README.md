@@ -20,4 +20,8 @@ Location and Communication:
 ![Screenshot 2022-11-04 222750](https://user-images.githubusercontent.com/91194192/200032914-bb6847f4-5ae4-4250-b6d7-405745088430.png)
 ![Screenshot 2022-11-04 223104](https://user-images.githubusercontent.com/91194192/200033905-f3a4a6bf-d4ea-4ec1-8971-cc242c2a22c2.png)
 
+Blogs:
+
+
+Social media handle of leader and contributors:
 
