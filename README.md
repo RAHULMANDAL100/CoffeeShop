@@ -17,3 +17,6 @@ Customers' review section:
 ![Screenshot 2022-11-04 222428](https://user-images.githubusercontent.com/91194192/200032242-c2321a7d-2ece-4054-9c47-0c0a11f35870.png)
 
 Location and Communication:
+![Screenshot 2022-11-04 222750](https://user-images.githubusercontent.com/91194192/200032914-bb6847f4-5ae4-4250-b6d7-405745088430.png)
+
+
