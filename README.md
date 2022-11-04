@@ -24,4 +24,4 @@ Blogs:
 ![Screenshot 2022-11-04 224131](https://user-images.githubusercontent.com/91194192/200035913-6e117e54-11e8-4d0c-8e60-35f8c17c965f.png)
 
 Social media handle of leader and contributors:
-
+![Screenshot 2022-11-04 224424](https://user-images.githubusercontent.com/91194192/200036233-fb8de718-99b4-47fd-a834-8664ff174bed.png)
