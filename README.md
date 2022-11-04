@@ -13,3 +13,7 @@ Menu page of the Website:
 Products available in Website:
 ![Screenshot 2022-11-04 222107](https://user-images.githubusercontent.com/91194192/200031580-7690aa37-3f5d-49d4-a324-43c00e59aeb4.png)
 
+Customers' review section:
+![Screenshot 2022-11-04 222428](https://user-images.githubusercontent.com/91194192/200032242-c2321a7d-2ece-4054-9c47-0c0a11f35870.png)
+
+Location and Communication:
