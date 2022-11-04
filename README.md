@@ -1,2 +1,2 @@
 # CoffeeShop
-A  basic CoffeeShop and snacks Website.
+A  basic CoffeeShop and Snacks Website.
